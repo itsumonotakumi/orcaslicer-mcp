@@ -1,0 +1,30 @@
+{
+  "name": "orcaslicer-mcp-server",
+  "version": "2.0.0",
+  "description": "MCP server for controlling OrcaSlicer externally — enables AI agents to explore settings, modify parameters, execute slicing, and evaluate results.",
+  "license": "AGPL-3.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "dotenv": "^16.4.7",
+    "execa": "^9.5.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
